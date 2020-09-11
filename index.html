@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Gol ya Puch</title>
+</head>
+<style>
+    button, a, button:focus{
+        border: none;
+        outline: none;
+        transition: all .3s;
+        overflow: hidden;
+    }
+    button:hover {
+        transform: scale(1.1)
+    }
+</style>
+<body>
+    <div class="text-center">
+        <div class="jumbotron" style='padding: 1rem'>
+            <h1 class="display-4">Hello <span style='color: red'></span></h1>
+            <hr class="my-4">
+            <p id='ms'>click on start then choose one of hands to find goal</p>
+            <p class="lead">
+                <a id='start' class="btn btn-primary btn-lg" href="#" role="button">Start</a>
+            </p>
+            <p class="lead">score is: <span id='score'>0</span></p>
+        </div>
+        <div id='div' class='row'>
+            <div class="col">
+                <button><img src="./0.png" alt=""></button>
+            </div>
+            <div class="col">
+                <button><img src="./0.png" alt=""></button>
+            </div>
+            <div class="col">
+                <button><img src="./0.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <script src='./app.js'></script>
+</body>
+</html>
